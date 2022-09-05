@@ -1,11 +1,7 @@
 import React from "react";
 
 const ShopPage = () => {
-  return (
-    <div>
-      <h1>Shop</h1>
-    </div>
-  );
+  return <div></div>;
 };
 
 export { ShopPage };
