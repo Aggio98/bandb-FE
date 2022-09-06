@@ -7,6 +7,7 @@ import Spinner from "react-bootstrap/Spinner";
 import ProductCard from "../../components/ProductCard";
 
 const ShopPage = () => {
+
 	const [product, setProduct] = useState("");
 
 	useEffect(() => {
@@ -48,6 +49,9 @@ const ShopPage = () => {
 			))}
 		</div>
 	);
+
+  return <div></div>;
+
 };
 
 export { ShopPage };

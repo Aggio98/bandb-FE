@@ -5,12 +5,14 @@
   display: flex;
 }
 .greenbox {
-  margin-left: 50px;
-  background-color: #d4ed31;
+  margin-left: 100px;
   width: 80%;
   height: 30px;
-  margin-right: 50px;
+  margin-right: 100px;
   margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
 }
 
 .redbox {
