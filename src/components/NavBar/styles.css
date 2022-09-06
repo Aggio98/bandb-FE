@@ -6,18 +6,31 @@
 }
 .greenbox {
   margin-left: 100px;
-  width: 80%;
+  width: 60%;
   height: 30px;
   margin-right: 100px;
   margin-top: 1%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-decoration: none;
+  align-items: center;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
+
+.links.active {
+  text-decoration: none;
+  color: white;
+}
+
+.shop {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .redbox {
-  width: 10%;
-  height: 30px;
-  background-color: #df1616;
-  margin-top: 1%;
+  margin-left: 10em;
 }
