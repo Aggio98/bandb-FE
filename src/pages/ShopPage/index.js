@@ -2,9 +2,10 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 // import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 import Spinner from "react-bootstrap/Spinner";
 import ProductCard from "../../components/ProductCard";
+import "./style.css";
 
 const ShopPage = () => {
 	const [product, setProduct] = useState("");
@@ -31,21 +32,35 @@ const ShopPage = () => {
 			</div>
 		);
 	}
+	/* <Link to={`/cocktails/${product.id}`}> Test </Link> */
 
 	return (
 		<div>
-			<h2> Test </h2>
-			{product.map((product, id) => (
-				<p key={id}>
-					<Link to={`/cocktails/${product.id}`}> Test </Link>
-					<ProductCard
-						name={product.title}
-						image={product.mainImage}
-						price={product.price}
-						id={product.id}
-					/>
-				</p>
-			))}
+			<h2> Products </h2>
+			<div
+				style={{
+					display: "flex",
+					flexWrap: "wrap",
+					justifyContent: "space-evenly",
+				}}
+			>
+				{product.map((product, id) => (
+					<div
+						style={{
+							width: "18rem",
+							paddingTop: "20px",
+							flexWrap: "wrap",
+						}}
+					>
+						<ProductCard
+							name={product.title}
+							image={product.mainImage}
+							price={product.price}
+							id={product.id}
+						/>
+					</div>
+				))}
+			</div>
 		</div>
 	);
 };

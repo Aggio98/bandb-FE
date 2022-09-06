@@ -1,7 +1,7 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { HomePage, DetailsPage, ShopPage } from "./pages";
 import { NavBar } from "./components";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 	return (
