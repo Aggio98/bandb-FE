@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
 import { Link } from "react-router-dom";
 import Spinner from "react-bootstrap/Spinner";
 import DetailsCard from "../../components/DetailsCard";
@@ -49,6 +50,7 @@ const DetailsPage = () => {
       />
     </div>
   );
+
 };
 
 export { DetailsPage };

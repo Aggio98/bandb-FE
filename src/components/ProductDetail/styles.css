@@ -1,0 +1,24 @@
+.small-images {
+	width: 400px;
+	height: 20%;
+	min-height: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-width: 10px;
+	border-color: black;
+	justify-content: space-between;
+}
+.all-images {
+	display: flex;
+}
+
+.image {
+	border: 10px;
+	border-color: black;
+	width: 130px;
+}
+
+.content {
+	align-self: end;
+}
