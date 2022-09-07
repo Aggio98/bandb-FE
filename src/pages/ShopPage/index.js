@@ -34,14 +34,14 @@ const ShopPage = () => {
 
   return (
     <div>
-      <h2> Test </h2>
+      <h2>test</h2>
       {product.map((product, id) => (
         <p key={id}>
           <Link to={`/cocktails/${product.id}`}> Test </Link>
           <ProductCard
             name={product.title}
-            image={product.mainImage}
             price={product.price}
+            image={product.mainImage}
             id={product.id}
           />
         </p>
