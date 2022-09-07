@@ -8,6 +8,7 @@ import ProductCard from "../../components/ProductCard";
 import "./style.css";
 
 const ShopPage = () => {
+
 	const [product, setProduct] = useState("");
 
 	useEffect(() => {
@@ -63,6 +64,9 @@ const ShopPage = () => {
 			</div>
 		</div>
 	);
+
+  return <div></div>;
+
 };
 
 export { ShopPage };
