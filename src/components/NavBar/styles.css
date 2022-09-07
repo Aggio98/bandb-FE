@@ -1,10 +1,11 @@
 .container {
-  width: 100%;
-  height: 60px;
-  background-color: #8568ff;
-  display: flex;
+	width: 100%;
+	height: 60px;
+	background-color: #8568ff;
+	display: flex;
 }
 .greenbox {
+
   margin-left: 100px;
   width: 80%;
   height: 30px;
@@ -13,11 +14,12 @@
   display: flex;
   justify-content: space-between;
   text-decoration: none;
+
 }
 
 .redbox {
-  width: 10%;
-  height: 30px;
-  background-color: #df1616;
-  margin-top: 1%;
+	width: 10%;
+	height: 30px;
+	background-color: #df1616;
+	margin-top: 1%;
 }
