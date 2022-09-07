@@ -1,12 +1,14 @@
 import { Route, Routes } from "react-router-dom";
+
 import { HomePage, DetailsPage, ShopPage, Login, Register } from "./pages";
-import { NavBar } from "./components";
+import { NavBar, Banner } from "./components";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 	return (
 		<div className="App">
-			<NavBar />
+	   <NavBar />
+      <Banner />
 			<Routes>
 				<Route path="/" element={<HomePage />}></Route>
 				<Route path="/shop" element={<ShopPage />}></Route>
@@ -16,6 +18,7 @@ function App() {
 			</Routes>
 		</div>
 	);
+
 }
 
 export default App;

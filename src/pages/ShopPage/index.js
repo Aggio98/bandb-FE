@@ -9,6 +9,7 @@ import "./style.css";
 
 const ShopPage = () => {
 
+
 	const [product, setProduct] = useState("");
 
 	useEffect(() => {

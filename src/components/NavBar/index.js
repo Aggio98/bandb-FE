@@ -1,17 +1,30 @@
 import "./styles.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <div className="container">
       <div className="greenbox">
-        <h1>TheShop</h1>
-        <Link to="/">Home</Link>
-        <Link to="/products">Products</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/shop">Shop</Link>
-        <Link to="/contact">Contact</Link>
-        <input placeholder="Search Product" />
+        <h2 className="nav-title">
+          <span>The</span>
+          <span style={{ color: "white" }}>Shop</span>
+        </h2>
+        <NavLink className="links" to="/">
+          Home
+        </NavLink>
+        <NavLink className="links" to="/products">
+          Products
+        </NavLink>
+        <NavLink className="links" to="/blog">
+          Blog
+        </NavLink>
+        <NavLink className="links" to="/shop">
+          Shop
+        </NavLink>
+        <NavLink className="links" to="/contact">
+          Contact
+        </NavLink>
+        <input className="redbox" placeholder="Search Product" />
       </div>
     </div>
   );
