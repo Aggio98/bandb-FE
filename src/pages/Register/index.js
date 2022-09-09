@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Navigate } from "react-router-dom";
 import "./styles.css";
 const axios = require("axios");
 
@@ -22,6 +23,7 @@ const Register = () => {
 					}
 				);
 				console.log(response.data);
+				Navigate("../account");
 			} catch (error) {
 				console.log("Something is wrong", error);
 			}
