@@ -3,14 +3,11 @@ import { Account } from "../../components/Account";
 import "./styles.css";
 
 const HomePage = () => {
-
-	return (
-		<div className="home">
-			<h1>Home</h1>
-			<Account />
-		</div>
-	);
-
+  return (
+    <div className="home">
+      <Account />
+    </div>
+  );
 };
 
 export { HomePage };

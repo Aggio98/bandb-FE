@@ -2,17 +2,15 @@ import "./style.css";
 import picBanner from "@/../../public/assets/womanbanner.png";
 const Banner = () => {
   return (
-    <div>
-      <div className="container1">
-        <div className="picContainer">
-          <div className="textContainer">
-            <h2>One click, one product, one opportunity</h2>
-          </div>
-          <div className="textContainer"></div>
-          <div className="textContainer"></div>
-          <img className="pic" src={picBanner} alt=""></img>
-        </div>
+    <div className="bigContainer">
+      <div className="textContainer">
+        <h2>
+          Product for every need, at the
+          <br />
+          distance of a click
+        </h2>
       </div>
+      <img src={picBanner} alt="Beautiful woman in dress" />
     </div>
   );
 };
