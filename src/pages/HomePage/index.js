@@ -9,6 +9,7 @@ const HomePage = () => {
 			<Account />
 		</div>
 	);
+
 };
 
 export { HomePage };
