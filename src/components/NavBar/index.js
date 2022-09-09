@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { BsCart, BsPerson, BsHeart } from "react-icons/bs";
 
 const NavBar = () => {
+
   return (
     <div className="big-container">
       <div className="greenbox">
@@ -16,9 +17,9 @@ const NavBar = () => {
         <NavLink className="links" to="/products">
           Products
         </NavLink>
-        <NavLink className="links" to="/blog">
-          Blog
-        </NavLink>
+        <NavLink className="links" to="/account">
+					Account
+				</NavLink>
         <NavLink className="links" to="/shop">
           Shop
         </NavLink>
