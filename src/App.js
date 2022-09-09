@@ -11,6 +11,7 @@ import {
 import { NavBar, Banner } from "./components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
 	const [token, setToken] = useState();
@@ -36,9 +37,9 @@ function App() {
 					element={<Login functionProp={getToken} />}
 				></Route>
 			</Routes>
+			<Footer />
 		</div>
 	);
-
 }
 
 export default App;
